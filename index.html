@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SunVee Drone | 지능형 드론 관제 및 AI 소프트웨어</title>
+  <title>SunBee Drone | 지능형 드론 관제 및 AI 소프트웨어</title>
   <style>
     :root {
       --bg: #0b1020;
@@ -53,14 +53,20 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 68px;
+      height: 72px;
     }
 
     .brand {
-      font-size: 1.15rem;
-      font-weight: 700;
-      letter-spacing: 0.3px;
-      color: var(--accent);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand img {
+      height: 40px;
+      width: auto;
+      display: block;
+      border-radius: 6px;
     }
 
     .nav-links {
@@ -75,8 +81,30 @@
     }
 
     .hero {
-      padding: 96px 0 72px;
+      padding: 80px 0 72px;
       text-align: left;
+    }
+
+    .hero-logo {
+      height: 76px;
+      width: auto;
+      display: block;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .status-banner {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 10px;
+      background: rgba(250, 204, 21, 0.12);
+      border: 1px solid rgba(250, 204, 21, 0.35);
+      color: #fde047;
+      font-size: 0.92rem;
+      font-weight: 600;
+      margin-bottom: 16px;
     }
 
     .badge {
@@ -205,7 +233,10 @@
         display: none;
       }
       .hero {
-        padding: 68px 0 52px;
+        padding: 60px 0 52px;
+      }
+      .hero-logo {
+        height: 56px;
       }
     }
   </style>
@@ -213,7 +244,9 @@
 <body>
   <header>
     <div class="container nav">
-      <a href="#" class="brand">SunVee Drone</a>
+      <a href="#" class="brand">
+        <img src="./SB_logo.jpg" alt="SunVee Drone 로고" />
+      </a>
       <nav class="nav-links">
         <a href="#services">주요 분야</a>
         <a href="#about">소개</a>
@@ -225,6 +258,8 @@
   <main>
     <section class="hero">
       <div class="container">
+        <img src="./SB_logo.png" alt="SunBee Drone 로고" class="hero-logo" />
+        <div class="status-banner">현재 홈페이지를 구축중입니다</div><br />
         <div class="badge">Drone Control · AI Software · Flight & Education</div>
         <h1>현장과 데이터를 잇는<br /><span>스마트 드론 관제 솔루션</span></h1>
         <p>
